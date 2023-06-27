@@ -1,0 +1,47 @@
+openapi: 3.0.3
+info:
+    title: Stock Option Planner Service
+    description: Service for planning stock options including vesting schedules
+    version: "1.0"
+servers:
+    - url: http://localhost:8000
+paths:
+    /openapi.json:
+        get:
+            tags:
+                - sop
+            summary: Download ./gen/http/openapi.json
+            operationId: sop#/openapi.json
+            responses:
+                "200":
+                    description: File downloaded
+    /plan/{symbol}:
+        get:
+            tags:
+                - sop
+            summary: plan sop
+            operationId: sop#plan
+            parameters:
+                - name: symbol
+                  in: path
+                  description: stock symbol to retrieve plan for
+                  required: true
+                  schema:
+                    type: string
+                    description: stock symbol to retrieve plan for
+                    example: Voluptas optio enim.
+                  example: Ullam cumque totam et.
+            responses:
+                "200":
+                    description: OK response.
+                    content:
+                        application/json:
+                            schema:
+                                type: integer
+                                example: 3926491490007617809
+                                format: int64
+                            example: 7150740811311998122
+components: {}
+tags:
+    - name: sop
+      description: The sop service provides advisors with a comprehensive view of a particular stock schedule.

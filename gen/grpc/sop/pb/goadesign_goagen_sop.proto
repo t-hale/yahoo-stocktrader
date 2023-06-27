@@ -1,0 +1,28 @@
+// Code generated with goa v3.11.3, DO NOT EDIT.
+//
+// sop protocol buffer definition
+//
+// Command:
+// $ goa gen stocktrader/design
+
+syntax = "proto3";
+
+package sop;
+
+option go_package = "/soppb";
+
+// The sop service provides advisors with a comprehensive view of a particular
+// stock schedule.
+service Sop {
+	// Plan implements plan.
+	rpc Plan (PlanRequest) returns (PlanResponse);
+}
+
+message PlanRequest {
+	// stock symbol to retrieve plan for
+	string symbol = 1;
+}
+
+message PlanResponse {
+	sint32 field = 1;
+}
