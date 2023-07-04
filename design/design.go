@@ -10,7 +10,7 @@ var _ = API("sop", func() {
 	Server("server", func() {
 		Host("localhost", func() {
 			URI("http://localhost:8000")
-			URI("grpc://localhost:8080")
+			//URI("grpc://localhost:8080")
 		})
 	})
 })
@@ -24,14 +24,14 @@ var _ = Service("sop", func() {
 			Required("symbol")
 		})
 
-		Result(Int)
+		Result(YahooFinanceResponse)
 
 		HTTP(func() {
 			GET("/plan/{symbol}")
 		})
 
-		GRPC(func() {
-		})
+		//GRPC(func() {
+		//})
 	})
 
 	Files("/openapi.json", "./gen/http/openapi.json")

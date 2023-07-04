@@ -26,11 +26,11 @@ func NewClient(plan goa.Endpoint) *Client {
 }
 
 // Plan calls the "plan" endpoint of the "sop" service.
-func (c *Client) Plan(ctx context.Context, p *PlanPayload) (res int, err error) {
+func (c *Client) Plan(ctx context.Context, p *PlanPayload) (res *YahooFinanceResponse, err error) {
 	var ires any
 	ires, err = c.PlanEndpoint(ctx, p)
 	if err != nil {
 		return
 	}
-	return ires.(int), nil
+	return ires.(*YahooFinanceResponse), nil
 }

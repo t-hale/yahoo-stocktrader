@@ -1,4 +1,4 @@
-package sopapi
+package stocktrader
 
 import (
 	"context"
@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log"
 	"net/url"
-	sop "stocktrader/gen/sop"
+	"stocktrader/gen/sop"
 )
 
 // sop service example implementation.
@@ -21,13 +21,14 @@ func NewSop(logger *log.Logger) sop.Service {
 }
 
 // Plan implements plan.
-func (s *sopsrvc) Plan(ctx context.Context, p *sop.PlanPayload) (res int, err error) {
+func (s *sopsrvc) Plan(ctx context.Context, p *sop.PlanPayload) (*sop.YahooFinanceResponse, error) {
 	s.logger.Printf("sop.plan called with %+v\n", p)
 
 	tickerData, err := GetTickerData(p.Symbol, OneMonth, OneDay, "quote", true, false)
 
 	if err != nil {
 		s.logger.Printf("Error retrieving ticker data for %q : %s", p.Symbol, err)
+		return nil, err
 	}
 
 	prettyData, err := json.MarshalIndent(tickerData, "", "    ")
@@ -36,11 +37,12 @@ func (s *sopsrvc) Plan(ctx context.Context, p *sop.PlanPayload) (res int, err er
 	} else {
 		s.logger.Printf("tickerData : %s\n", prettyData)
 	}
-	return
+
+	return &tickerData, nil
 }
 
-func GetTickerData(ticker, rangeStr, intervalStr, indicators string, includeTimestamps, includePrePostTradingPeriods bool) (ChartQueryResponse, error) {
-	data := YahooFinanceResponse{}
+func GetTickerData(ticker, rangeStr, intervalStr, indicators string, includeTimestamps, includePrePostTradingPeriods bool) (*sop.YahooFinanceResponse, error) {
+	var data sop.YahooFinanceResponse
 
 	values := url.Values{}
 	values.Add("range", rangeStr)
@@ -53,8 +55,8 @@ func GetTickerData(ticker, rangeStr, intervalStr, indicators string, includeTime
 	url := fmt.Sprintf("https://query1.finance.yahoo.com/v7/finance/chart/%s?%s", ticker, values.Encode())
 	err := getJson(url, &data)
 	if err != nil {
-		return ChartQueryResponse{}, err
+		return nil, err
 	}
 
-	return data.GetFormattedOutput()
+	return GetFormattedOutput(data), nil
 }

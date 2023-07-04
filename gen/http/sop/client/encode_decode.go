@@ -63,17 +63,192 @@ func DecodePlanResponse(decoder func(*http.Response) goahttp.Decoder, restoreBod
 		switch resp.StatusCode {
 		case http.StatusOK:
 			var (
-				body int
+				body PlanResponseBody
 				err  error
 			)
 			err = decoder(resp).Decode(&body)
 			if err != nil {
 				return nil, goahttp.ErrDecodingError("sop", "plan", err)
 			}
-			return body, nil
+			res := NewPlanYahooFinanceResponseOK(&body)
+			return res, nil
 		default:
 			body, _ := io.ReadAll(resp.Body)
 			return nil, goahttp.ErrInvalidResponse("sop", "plan", resp.StatusCode, string(body))
 		}
 	}
+}
+
+// unmarshalYahooFinanceChartResponseBodyToSopYahooFinanceChart builds a value
+// of type *sop.YahooFinanceChart from a value of type
+// *YahooFinanceChartResponseBody.
+func unmarshalYahooFinanceChartResponseBodyToSopYahooFinanceChart(v *YahooFinanceChartResponseBody) *sop.YahooFinanceChart {
+	if v == nil {
+		return nil
+	}
+	res := &sop.YahooFinanceChart{
+		Error: v.Error,
+	}
+	if v.Result != nil {
+		res.Result = make([]*sop.YahooFinanceResult, len(v.Result))
+		for i, val := range v.Result {
+			res.Result[i] = unmarshalYahooFinanceResultResponseBodyToSopYahooFinanceResult(val)
+		}
+	}
+
+	return res
+}
+
+// unmarshalYahooFinanceResultResponseBodyToSopYahooFinanceResult builds a
+// value of type *sop.YahooFinanceResult from a value of type
+// *YahooFinanceResultResponseBody.
+func unmarshalYahooFinanceResultResponseBodyToSopYahooFinanceResult(v *YahooFinanceResultResponseBody) *sop.YahooFinanceResult {
+	if v == nil {
+		return nil
+	}
+	res := &sop.YahooFinanceResult{}
+	if v.Meta != nil {
+		res.Meta = unmarshalYahooFinanceMetaResponseBodyToSopYahooFinanceMeta(v.Meta)
+	}
+	if v.Timestamp != nil {
+		res.Timestamp = make([]int64, len(v.Timestamp))
+		for i, val := range v.Timestamp {
+			res.Timestamp[i] = val
+		}
+	}
+	if v.Indicators != nil {
+		res.Indicators = unmarshalYahooFinanceIndicatorsResponseBodyToSopYahooFinanceIndicators(v.Indicators)
+	}
+
+	return res
+}
+
+// unmarshalYahooFinanceMetaResponseBodyToSopYahooFinanceMeta builds a value of
+// type *sop.YahooFinanceMeta from a value of type
+// *YahooFinanceMetaResponseBody.
+func unmarshalYahooFinanceMetaResponseBodyToSopYahooFinanceMeta(v *YahooFinanceMetaResponseBody) *sop.YahooFinanceMeta {
+	if v == nil {
+		return nil
+	}
+	res := &sop.YahooFinanceMeta{
+		Currency:       v.Currency,
+		Symbol:         v.Symbol,
+		InstrumentType: v.InstrumentType,
+		ExchangeName:   v.ExchangeName,
+		FirstTradeDate: v.FirstTradeDate,
+		GMTOffset:      v.GMTOffset,
+		Timezone:       v.Timezone,
+	}
+	if v.CurrentTradingPeriod != nil {
+		res.CurrentTradingPeriod = unmarshalYahooFinanceCurrentTradingPeriodResponseBodyToSopYahooFinanceCurrentTradingPeriod(v.CurrentTradingPeriod)
+	}
+	if v.TradingPeriods != nil {
+		res.TradingPeriods = make([][]*sop.YahooFinanceTradingPeriod, len(v.TradingPeriods))
+		for i, val := range v.TradingPeriods {
+			res.TradingPeriods[i] = make([]*sop.YahooFinanceTradingPeriod, len(val))
+			for j, val := range val {
+				res.TradingPeriods[i][j] = unmarshalYahooFinanceTradingPeriodResponseBodyToSopYahooFinanceTradingPeriod(val)
+			}
+		}
+	}
+
+	return res
+}
+
+// unmarshalYahooFinanceCurrentTradingPeriodResponseBodyToSopYahooFinanceCurrentTradingPeriod
+// builds a value of type *sop.YahooFinanceCurrentTradingPeriod from a value of
+// type *YahooFinanceCurrentTradingPeriodResponseBody.
+func unmarshalYahooFinanceCurrentTradingPeriodResponseBodyToSopYahooFinanceCurrentTradingPeriod(v *YahooFinanceCurrentTradingPeriodResponseBody) *sop.YahooFinanceCurrentTradingPeriod {
+	if v == nil {
+		return nil
+	}
+	res := &sop.YahooFinanceCurrentTradingPeriod{}
+	if v.Pre != nil {
+		res.Pre = unmarshalYahooFinanceTradingPeriodResponseBodyToSopYahooFinanceTradingPeriod(v.Pre)
+	}
+	if v.Regular != nil {
+		res.Regular = unmarshalYahooFinanceTradingPeriodResponseBodyToSopYahooFinanceTradingPeriod(v.Regular)
+	}
+	if v.Post != nil {
+		res.Post = unmarshalYahooFinanceTradingPeriodResponseBodyToSopYahooFinanceTradingPeriod(v.Post)
+	}
+
+	return res
+}
+
+// unmarshalYahooFinanceTradingPeriodResponseBodyToSopYahooFinanceTradingPeriod
+// builds a value of type *sop.YahooFinanceTradingPeriod from a value of type
+// *YahooFinanceTradingPeriodResponseBody.
+func unmarshalYahooFinanceTradingPeriodResponseBodyToSopYahooFinanceTradingPeriod(v *YahooFinanceTradingPeriodResponseBody) *sop.YahooFinanceTradingPeriod {
+	if v == nil {
+		return nil
+	}
+	res := &sop.YahooFinanceTradingPeriod{
+		Timezone:  v.Timezone,
+		Start:     v.Start,
+		End:       v.End,
+		GMTOffset: v.GMTOffset,
+	}
+
+	return res
+}
+
+// unmarshalYahooFinanceIndicatorsResponseBodyToSopYahooFinanceIndicators
+// builds a value of type *sop.YahooFinanceIndicators from a value of type
+// *YahooFinanceIndicatorsResponseBody.
+func unmarshalYahooFinanceIndicatorsResponseBodyToSopYahooFinanceIndicators(v *YahooFinanceIndicatorsResponseBody) *sop.YahooFinanceIndicators {
+	if v == nil {
+		return nil
+	}
+	res := &sop.YahooFinanceIndicators{}
+	if v.Quote != nil {
+		res.Quote = make([]*sop.YahooFinanceQuote, len(v.Quote))
+		for i, val := range v.Quote {
+			res.Quote[i] = unmarshalYahooFinanceQuoteResponseBodyToSopYahooFinanceQuote(val)
+		}
+	}
+
+	return res
+}
+
+// unmarshalYahooFinanceQuoteResponseBodyToSopYahooFinanceQuote builds a value
+// of type *sop.YahooFinanceQuote from a value of type
+// *YahooFinanceQuoteResponseBody.
+func unmarshalYahooFinanceQuoteResponseBodyToSopYahooFinanceQuote(v *YahooFinanceQuoteResponseBody) *sop.YahooFinanceQuote {
+	if v == nil {
+		return nil
+	}
+	res := &sop.YahooFinanceQuote{}
+	if v.High != nil {
+		res.High = make([]float64, len(v.High))
+		for i, val := range v.High {
+			res.High[i] = val
+		}
+	}
+	if v.Open != nil {
+		res.Open = make([]float64, len(v.Open))
+		for i, val := range v.Open {
+			res.Open[i] = val
+		}
+	}
+	if v.Low != nil {
+		res.Low = make([]float64, len(v.Low))
+		for i, val := range v.Low {
+			res.Low[i] = val
+		}
+	}
+	if v.Close != nil {
+		res.Close = make([]float64, len(v.Close))
+		for i, val := range v.Close {
+			res.Close[i] = val
+		}
+	}
+	if v.Volume != nil {
+		res.Volume = make([]float64, len(v.Volume))
+		for i, val := range v.Volume {
+			res.Volume[i] = val
+		}
+	}
+
+	return res
 }

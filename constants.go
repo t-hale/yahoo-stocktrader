@@ -1,4 +1,4 @@
-package sopapi
+package stocktrader
 
 const (
 	OneMinute     = "1m"

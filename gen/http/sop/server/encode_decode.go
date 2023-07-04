@@ -10,6 +10,7 @@ package server
 import (
 	"context"
 	"net/http"
+	sop "stocktrader/gen/sop"
 
 	goahttp "goa.design/goa/v3/http"
 )
@@ -18,9 +19,9 @@ import (
 // endpoint.
 func EncodePlanResponse(encoder func(context.Context, http.ResponseWriter) goahttp.Encoder) func(context.Context, http.ResponseWriter, any) error {
 	return func(ctx context.Context, w http.ResponseWriter, v any) error {
-		res, _ := v.(int)
+		res, _ := v.(*sop.YahooFinanceResponse)
 		enc := encoder(ctx, w)
-		body := res
+		body := NewPlanResponseBody(res)
 		w.WriteHeader(http.StatusOK)
 		return enc.Encode(body)
 	}
@@ -40,4 +41,178 @@ func DecodePlanRequest(mux goahttp.Muxer, decoder func(*http.Request) goahttp.De
 
 		return payload, nil
 	}
+}
+
+// marshalSopYahooFinanceChartToYahooFinanceChartResponseBody builds a value of
+// type *YahooFinanceChartResponseBody from a value of type
+// *sop.YahooFinanceChart.
+func marshalSopYahooFinanceChartToYahooFinanceChartResponseBody(v *sop.YahooFinanceChart) *YahooFinanceChartResponseBody {
+	if v == nil {
+		return nil
+	}
+	res := &YahooFinanceChartResponseBody{
+		Error: v.Error,
+	}
+	if v.Result != nil {
+		res.Result = make([]*YahooFinanceResultResponseBody, len(v.Result))
+		for i, val := range v.Result {
+			res.Result[i] = marshalSopYahooFinanceResultToYahooFinanceResultResponseBody(val)
+		}
+	}
+
+	return res
+}
+
+// marshalSopYahooFinanceResultToYahooFinanceResultResponseBody builds a value
+// of type *YahooFinanceResultResponseBody from a value of type
+// *sop.YahooFinanceResult.
+func marshalSopYahooFinanceResultToYahooFinanceResultResponseBody(v *sop.YahooFinanceResult) *YahooFinanceResultResponseBody {
+	if v == nil {
+		return nil
+	}
+	res := &YahooFinanceResultResponseBody{}
+	if v.Meta != nil {
+		res.Meta = marshalSopYahooFinanceMetaToYahooFinanceMetaResponseBody(v.Meta)
+	}
+	if v.Timestamp != nil {
+		res.Timestamp = make([]int64, len(v.Timestamp))
+		for i, val := range v.Timestamp {
+			res.Timestamp[i] = val
+		}
+	}
+	if v.Indicators != nil {
+		res.Indicators = marshalSopYahooFinanceIndicatorsToYahooFinanceIndicatorsResponseBody(v.Indicators)
+	}
+
+	return res
+}
+
+// marshalSopYahooFinanceMetaToYahooFinanceMetaResponseBody builds a value of
+// type *YahooFinanceMetaResponseBody from a value of type
+// *sop.YahooFinanceMeta.
+func marshalSopYahooFinanceMetaToYahooFinanceMetaResponseBody(v *sop.YahooFinanceMeta) *YahooFinanceMetaResponseBody {
+	if v == nil {
+		return nil
+	}
+	res := &YahooFinanceMetaResponseBody{
+		Currency:       v.Currency,
+		Symbol:         v.Symbol,
+		InstrumentType: v.InstrumentType,
+		ExchangeName:   v.ExchangeName,
+		FirstTradeDate: v.FirstTradeDate,
+		GMTOffset:      v.GMTOffset,
+		Timezone:       v.Timezone,
+	}
+	if v.CurrentTradingPeriod != nil {
+		res.CurrentTradingPeriod = marshalSopYahooFinanceCurrentTradingPeriodToYahooFinanceCurrentTradingPeriodResponseBody(v.CurrentTradingPeriod)
+	}
+	if v.TradingPeriods != nil {
+		res.TradingPeriods = make([][]*YahooFinanceTradingPeriodResponseBody, len(v.TradingPeriods))
+		for i, val := range v.TradingPeriods {
+			res.TradingPeriods[i] = make([]*YahooFinanceTradingPeriodResponseBody, len(val))
+			for j, val := range val {
+				res.TradingPeriods[i][j] = marshalSopYahooFinanceTradingPeriodToYahooFinanceTradingPeriodResponseBody(val)
+			}
+		}
+	}
+
+	return res
+}
+
+// marshalSopYahooFinanceCurrentTradingPeriodToYahooFinanceCurrentTradingPeriodResponseBody
+// builds a value of type *YahooFinanceCurrentTradingPeriodResponseBody from a
+// value of type *sop.YahooFinanceCurrentTradingPeriod.
+func marshalSopYahooFinanceCurrentTradingPeriodToYahooFinanceCurrentTradingPeriodResponseBody(v *sop.YahooFinanceCurrentTradingPeriod) *YahooFinanceCurrentTradingPeriodResponseBody {
+	if v == nil {
+		return nil
+	}
+	res := &YahooFinanceCurrentTradingPeriodResponseBody{}
+	if v.Pre != nil {
+		res.Pre = marshalSopYahooFinanceTradingPeriodToYahooFinanceTradingPeriodResponseBody(v.Pre)
+	}
+	if v.Regular != nil {
+		res.Regular = marshalSopYahooFinanceTradingPeriodToYahooFinanceTradingPeriodResponseBody(v.Regular)
+	}
+	if v.Post != nil {
+		res.Post = marshalSopYahooFinanceTradingPeriodToYahooFinanceTradingPeriodResponseBody(v.Post)
+	}
+
+	return res
+}
+
+// marshalSopYahooFinanceTradingPeriodToYahooFinanceTradingPeriodResponseBody
+// builds a value of type *YahooFinanceTradingPeriodResponseBody from a value
+// of type *sop.YahooFinanceTradingPeriod.
+func marshalSopYahooFinanceTradingPeriodToYahooFinanceTradingPeriodResponseBody(v *sop.YahooFinanceTradingPeriod) *YahooFinanceTradingPeriodResponseBody {
+	if v == nil {
+		return nil
+	}
+	res := &YahooFinanceTradingPeriodResponseBody{
+		Timezone:  v.Timezone,
+		Start:     v.Start,
+		End:       v.End,
+		GMTOffset: v.GMTOffset,
+	}
+
+	return res
+}
+
+// marshalSopYahooFinanceIndicatorsToYahooFinanceIndicatorsResponseBody builds
+// a value of type *YahooFinanceIndicatorsResponseBody from a value of type
+// *sop.YahooFinanceIndicators.
+func marshalSopYahooFinanceIndicatorsToYahooFinanceIndicatorsResponseBody(v *sop.YahooFinanceIndicators) *YahooFinanceIndicatorsResponseBody {
+	if v == nil {
+		return nil
+	}
+	res := &YahooFinanceIndicatorsResponseBody{}
+	if v.Quote != nil {
+		res.Quote = make([]*YahooFinanceQuoteResponseBody, len(v.Quote))
+		for i, val := range v.Quote {
+			res.Quote[i] = marshalSopYahooFinanceQuoteToYahooFinanceQuoteResponseBody(val)
+		}
+	}
+
+	return res
+}
+
+// marshalSopYahooFinanceQuoteToYahooFinanceQuoteResponseBody builds a value of
+// type *YahooFinanceQuoteResponseBody from a value of type
+// *sop.YahooFinanceQuote.
+func marshalSopYahooFinanceQuoteToYahooFinanceQuoteResponseBody(v *sop.YahooFinanceQuote) *YahooFinanceQuoteResponseBody {
+	if v == nil {
+		return nil
+	}
+	res := &YahooFinanceQuoteResponseBody{}
+	if v.High != nil {
+		res.High = make([]float64, len(v.High))
+		for i, val := range v.High {
+			res.High[i] = val
+		}
+	}
+	if v.Open != nil {
+		res.Open = make([]float64, len(v.Open))
+		for i, val := range v.Open {
+			res.Open[i] = val
+		}
+	}
+	if v.Low != nil {
+		res.Low = make([]float64, len(v.Low))
+		for i, val := range v.Low {
+			res.Low[i] = val
+		}
+	}
+	if v.Close != nil {
+		res.Close = make([]float64, len(v.Close))
+		for i, val := range v.Close {
+			res.Close[i] = val
+		}
+	}
+	if v.Volume != nil {
+		res.Volume = make([]float64, len(v.Volume))
+		for i, val := range v.Volume {
+			res.Volume[i] = val
+		}
+	}
+
+	return res
 }

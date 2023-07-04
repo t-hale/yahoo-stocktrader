@@ -28,7 +28,7 @@ func UsageCommands() string {
 
 // UsageExamples produces an example of a valid invocation of the CLI tool.
 func UsageExamples() string {
-	return os.Args[0] + ` sop plan --symbol "Animi laudantium unde nam sunt."` + "\n" +
+	return os.Args[0] + ` sop plan --symbol "Voluptatem et rerum et dolores."` + "\n" +
 		""
 }
 
@@ -145,6 +145,6 @@ Plan implements plan.
     -symbol STRING: stock symbol to retrieve plan for
 
 Example:
-    %[1]s sop plan --symbol "Animi laudantium unde nam sunt."
+    %[1]s sop plan --symbol "Voluptatem et rerum et dolores."
 `, os.Args[0])
 }

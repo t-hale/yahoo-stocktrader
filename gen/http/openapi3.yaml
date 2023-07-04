@@ -29,19 +29,2109 @@ paths:
                   schema:
                     type: string
                     description: stock symbol to retrieve plan for
-                    example: Voluptas optio enim.
-                  example: Ullam cumque totam et.
+                    example: Eos sunt temporibus reiciendis ut.
+                  example: Cupiditate qui id reiciendis error ipsam.
             responses:
                 "200":
                     description: OK response.
                     content:
                         application/json:
                             schema:
-                                type: integer
-                                example: 3926491490007617809
-                                format: int64
-                            example: 7150740811311998122
-components: {}
+                                $ref: '#/components/schemas/YahooFinanceResponse'
+                            example:
+                                Chart:
+                                    Error: Rerum et.
+                                    Result:
+                                        - Indicators:
+                                            Quote:
+                                                - Close:
+                                                    - 0.3201921986184929
+                                                    - 0.11059251708215186
+                                                    - 0.6239833173147666
+                                                    - 0.598389741440459
+                                                  High:
+                                                    - 0.702230197760014
+                                                    - 0.7513764486876314
+                                                  Low:
+                                                    - 0.49977243133297633
+                                                    - 0.048986939397378235
+                                                    - 0.6178475618153434
+                                                    - 0.2911506592617521
+                                                  Open:
+                                                    - 0.7029969632199928
+                                                    - 0.8278558312862047
+                                                    - 0.30929602292179625
+                                                  Volume:
+                                                    - 0.7865204166146478
+                                                    - 0.34400469461343136
+                                                    - 0.29807775395043185
+                                                - Close:
+                                                    - 0.3201921986184929
+                                                    - 0.11059251708215186
+                                                    - 0.6239833173147666
+                                                    - 0.598389741440459
+                                                  High:
+                                                    - 0.702230197760014
+                                                    - 0.7513764486876314
+                                                  Low:
+                                                    - 0.49977243133297633
+                                                    - 0.048986939397378235
+                                                    - 0.6178475618153434
+                                                    - 0.2911506592617521
+                                                  Open:
+                                                    - 0.7029969632199928
+                                                    - 0.8278558312862047
+                                                    - 0.30929602292179625
+                                                  Volume:
+                                                    - 0.7865204166146478
+                                                    - 0.34400469461343136
+                                                    - 0.29807775395043185
+                                                - Close:
+                                                    - 0.3201921986184929
+                                                    - 0.11059251708215186
+                                                    - 0.6239833173147666
+                                                    - 0.598389741440459
+                                                  High:
+                                                    - 0.702230197760014
+                                                    - 0.7513764486876314
+                                                  Low:
+                                                    - 0.49977243133297633
+                                                    - 0.048986939397378235
+                                                    - 0.6178475618153434
+                                                    - 0.2911506592617521
+                                                  Open:
+                                                    - 0.7029969632199928
+                                                    - 0.8278558312862047
+                                                    - 0.30929602292179625
+                                                  Volume:
+                                                    - 0.7865204166146478
+                                                    - 0.34400469461343136
+                                                    - 0.29807775395043185
+                                                - Close:
+                                                    - 0.3201921986184929
+                                                    - 0.11059251708215186
+                                                    - 0.6239833173147666
+                                                    - 0.598389741440459
+                                                  High:
+                                                    - 0.702230197760014
+                                                    - 0.7513764486876314
+                                                  Low:
+                                                    - 0.49977243133297633
+                                                    - 0.048986939397378235
+                                                    - 0.6178475618153434
+                                                    - 0.2911506592617521
+                                                  Open:
+                                                    - 0.7029969632199928
+                                                    - 0.8278558312862047
+                                                    - 0.30929602292179625
+                                                  Volume:
+                                                    - 0.7865204166146478
+                                                    - 0.34400469461343136
+                                                    - 0.29807775395043185
+                                          Meta:
+                                            Currency: Quia assumenda aut est dicta distinctio.
+                                            CurrentTradingPeriod:
+                                                Post:
+                                                    End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                Pre:
+                                                    End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                Regular:
+                                                    End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                            ExchangeName: Voluptate dolor aut dolores quod quas deleniti.
+                                            FirstTradeDate: 6271420580422031140
+                                            GMTOffset: 8840907003230684406
+                                            InstrumentType: Totam officia aliquid.
+                                            Symbol: Explicabo quia dolores omnis eos quis.
+                                            Timezone: Cum cum inventore voluptates suscipit quod repellendus.
+                                            TradingPeriods:
+                                                - - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                - - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                          Timestamp:
+                                            - 8006728593824042314
+                                            - 6980508706912623555
+                                            - 7626113238915657187
+                                        - Indicators:
+                                            Quote:
+                                                - Close:
+                                                    - 0.3201921986184929
+                                                    - 0.11059251708215186
+                                                    - 0.6239833173147666
+                                                    - 0.598389741440459
+                                                  High:
+                                                    - 0.702230197760014
+                                                    - 0.7513764486876314
+                                                  Low:
+                                                    - 0.49977243133297633
+                                                    - 0.048986939397378235
+                                                    - 0.6178475618153434
+                                                    - 0.2911506592617521
+                                                  Open:
+                                                    - 0.7029969632199928
+                                                    - 0.8278558312862047
+                                                    - 0.30929602292179625
+                                                  Volume:
+                                                    - 0.7865204166146478
+                                                    - 0.34400469461343136
+                                                    - 0.29807775395043185
+                                                - Close:
+                                                    - 0.3201921986184929
+                                                    - 0.11059251708215186
+                                                    - 0.6239833173147666
+                                                    - 0.598389741440459
+                                                  High:
+                                                    - 0.702230197760014
+                                                    - 0.7513764486876314
+                                                  Low:
+                                                    - 0.49977243133297633
+                                                    - 0.048986939397378235
+                                                    - 0.6178475618153434
+                                                    - 0.2911506592617521
+                                                  Open:
+                                                    - 0.7029969632199928
+                                                    - 0.8278558312862047
+                                                    - 0.30929602292179625
+                                                  Volume:
+                                                    - 0.7865204166146478
+                                                    - 0.34400469461343136
+                                                    - 0.29807775395043185
+                                                - Close:
+                                                    - 0.3201921986184929
+                                                    - 0.11059251708215186
+                                                    - 0.6239833173147666
+                                                    - 0.598389741440459
+                                                  High:
+                                                    - 0.702230197760014
+                                                    - 0.7513764486876314
+                                                  Low:
+                                                    - 0.49977243133297633
+                                                    - 0.048986939397378235
+                                                    - 0.6178475618153434
+                                                    - 0.2911506592617521
+                                                  Open:
+                                                    - 0.7029969632199928
+                                                    - 0.8278558312862047
+                                                    - 0.30929602292179625
+                                                  Volume:
+                                                    - 0.7865204166146478
+                                                    - 0.34400469461343136
+                                                    - 0.29807775395043185
+                                                - Close:
+                                                    - 0.3201921986184929
+                                                    - 0.11059251708215186
+                                                    - 0.6239833173147666
+                                                    - 0.598389741440459
+                                                  High:
+                                                    - 0.702230197760014
+                                                    - 0.7513764486876314
+                                                  Low:
+                                                    - 0.49977243133297633
+                                                    - 0.048986939397378235
+                                                    - 0.6178475618153434
+                                                    - 0.2911506592617521
+                                                  Open:
+                                                    - 0.7029969632199928
+                                                    - 0.8278558312862047
+                                                    - 0.30929602292179625
+                                                  Volume:
+                                                    - 0.7865204166146478
+                                                    - 0.34400469461343136
+                                                    - 0.29807775395043185
+                                          Meta:
+                                            Currency: Quia assumenda aut est dicta distinctio.
+                                            CurrentTradingPeriod:
+                                                Post:
+                                                    End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                Pre:
+                                                    End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                Regular:
+                                                    End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                            ExchangeName: Voluptate dolor aut dolores quod quas deleniti.
+                                            FirstTradeDate: 6271420580422031140
+                                            GMTOffset: 8840907003230684406
+                                            InstrumentType: Totam officia aliquid.
+                                            Symbol: Explicabo quia dolores omnis eos quis.
+                                            Timezone: Cum cum inventore voluptates suscipit quod repellendus.
+                                            TradingPeriods:
+                                                - - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                - - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                          Timestamp:
+                                            - 8006728593824042314
+                                            - 6980508706912623555
+                                            - 7626113238915657187
+                                        - Indicators:
+                                            Quote:
+                                                - Close:
+                                                    - 0.3201921986184929
+                                                    - 0.11059251708215186
+                                                    - 0.6239833173147666
+                                                    - 0.598389741440459
+                                                  High:
+                                                    - 0.702230197760014
+                                                    - 0.7513764486876314
+                                                  Low:
+                                                    - 0.49977243133297633
+                                                    - 0.048986939397378235
+                                                    - 0.6178475618153434
+                                                    - 0.2911506592617521
+                                                  Open:
+                                                    - 0.7029969632199928
+                                                    - 0.8278558312862047
+                                                    - 0.30929602292179625
+                                                  Volume:
+                                                    - 0.7865204166146478
+                                                    - 0.34400469461343136
+                                                    - 0.29807775395043185
+                                                - Close:
+                                                    - 0.3201921986184929
+                                                    - 0.11059251708215186
+                                                    - 0.6239833173147666
+                                                    - 0.598389741440459
+                                                  High:
+                                                    - 0.702230197760014
+                                                    - 0.7513764486876314
+                                                  Low:
+                                                    - 0.49977243133297633
+                                                    - 0.048986939397378235
+                                                    - 0.6178475618153434
+                                                    - 0.2911506592617521
+                                                  Open:
+                                                    - 0.7029969632199928
+                                                    - 0.8278558312862047
+                                                    - 0.30929602292179625
+                                                  Volume:
+                                                    - 0.7865204166146478
+                                                    - 0.34400469461343136
+                                                    - 0.29807775395043185
+                                                - Close:
+                                                    - 0.3201921986184929
+                                                    - 0.11059251708215186
+                                                    - 0.6239833173147666
+                                                    - 0.598389741440459
+                                                  High:
+                                                    - 0.702230197760014
+                                                    - 0.7513764486876314
+                                                  Low:
+                                                    - 0.49977243133297633
+                                                    - 0.048986939397378235
+                                                    - 0.6178475618153434
+                                                    - 0.2911506592617521
+                                                  Open:
+                                                    - 0.7029969632199928
+                                                    - 0.8278558312862047
+                                                    - 0.30929602292179625
+                                                  Volume:
+                                                    - 0.7865204166146478
+                                                    - 0.34400469461343136
+                                                    - 0.29807775395043185
+                                                - Close:
+                                                    - 0.3201921986184929
+                                                    - 0.11059251708215186
+                                                    - 0.6239833173147666
+                                                    - 0.598389741440459
+                                                  High:
+                                                    - 0.702230197760014
+                                                    - 0.7513764486876314
+                                                  Low:
+                                                    - 0.49977243133297633
+                                                    - 0.048986939397378235
+                                                    - 0.6178475618153434
+                                                    - 0.2911506592617521
+                                                  Open:
+                                                    - 0.7029969632199928
+                                                    - 0.8278558312862047
+                                                    - 0.30929602292179625
+                                                  Volume:
+                                                    - 0.7865204166146478
+                                                    - 0.34400469461343136
+                                                    - 0.29807775395043185
+                                          Meta:
+                                            Currency: Quia assumenda aut est dicta distinctio.
+                                            CurrentTradingPeriod:
+                                                Post:
+                                                    End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                Pre:
+                                                    End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                Regular:
+                                                    End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                            ExchangeName: Voluptate dolor aut dolores quod quas deleniti.
+                                            FirstTradeDate: 6271420580422031140
+                                            GMTOffset: 8840907003230684406
+                                            InstrumentType: Totam officia aliquid.
+                                            Symbol: Explicabo quia dolores omnis eos quis.
+                                            Timezone: Cum cum inventore voluptates suscipit quod repellendus.
+                                            TradingPeriods:
+                                                - - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                - - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                          Timestamp:
+                                            - 8006728593824042314
+                                            - 6980508706912623555
+                                            - 7626113238915657187
+                                        - Indicators:
+                                            Quote:
+                                                - Close:
+                                                    - 0.3201921986184929
+                                                    - 0.11059251708215186
+                                                    - 0.6239833173147666
+                                                    - 0.598389741440459
+                                                  High:
+                                                    - 0.702230197760014
+                                                    - 0.7513764486876314
+                                                  Low:
+                                                    - 0.49977243133297633
+                                                    - 0.048986939397378235
+                                                    - 0.6178475618153434
+                                                    - 0.2911506592617521
+                                                  Open:
+                                                    - 0.7029969632199928
+                                                    - 0.8278558312862047
+                                                    - 0.30929602292179625
+                                                  Volume:
+                                                    - 0.7865204166146478
+                                                    - 0.34400469461343136
+                                                    - 0.29807775395043185
+                                                - Close:
+                                                    - 0.3201921986184929
+                                                    - 0.11059251708215186
+                                                    - 0.6239833173147666
+                                                    - 0.598389741440459
+                                                  High:
+                                                    - 0.702230197760014
+                                                    - 0.7513764486876314
+                                                  Low:
+                                                    - 0.49977243133297633
+                                                    - 0.048986939397378235
+                                                    - 0.6178475618153434
+                                                    - 0.2911506592617521
+                                                  Open:
+                                                    - 0.7029969632199928
+                                                    - 0.8278558312862047
+                                                    - 0.30929602292179625
+                                                  Volume:
+                                                    - 0.7865204166146478
+                                                    - 0.34400469461343136
+                                                    - 0.29807775395043185
+                                                - Close:
+                                                    - 0.3201921986184929
+                                                    - 0.11059251708215186
+                                                    - 0.6239833173147666
+                                                    - 0.598389741440459
+                                                  High:
+                                                    - 0.702230197760014
+                                                    - 0.7513764486876314
+                                                  Low:
+                                                    - 0.49977243133297633
+                                                    - 0.048986939397378235
+                                                    - 0.6178475618153434
+                                                    - 0.2911506592617521
+                                                  Open:
+                                                    - 0.7029969632199928
+                                                    - 0.8278558312862047
+                                                    - 0.30929602292179625
+                                                  Volume:
+                                                    - 0.7865204166146478
+                                                    - 0.34400469461343136
+                                                    - 0.29807775395043185
+                                                - Close:
+                                                    - 0.3201921986184929
+                                                    - 0.11059251708215186
+                                                    - 0.6239833173147666
+                                                    - 0.598389741440459
+                                                  High:
+                                                    - 0.702230197760014
+                                                    - 0.7513764486876314
+                                                  Low:
+                                                    - 0.49977243133297633
+                                                    - 0.048986939397378235
+                                                    - 0.6178475618153434
+                                                    - 0.2911506592617521
+                                                  Open:
+                                                    - 0.7029969632199928
+                                                    - 0.8278558312862047
+                                                    - 0.30929602292179625
+                                                  Volume:
+                                                    - 0.7865204166146478
+                                                    - 0.34400469461343136
+                                                    - 0.29807775395043185
+                                          Meta:
+                                            Currency: Quia assumenda aut est dicta distinctio.
+                                            CurrentTradingPeriod:
+                                                Post:
+                                                    End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                Pre:
+                                                    End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                Regular:
+                                                    End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                            ExchangeName: Voluptate dolor aut dolores quod quas deleniti.
+                                            FirstTradeDate: 6271420580422031140
+                                            GMTOffset: 8840907003230684406
+                                            InstrumentType: Totam officia aliquid.
+                                            Symbol: Explicabo quia dolores omnis eos quis.
+                                            Timezone: Cum cum inventore voluptates suscipit quod repellendus.
+                                            TradingPeriods:
+                                                - - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                - - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                                  - End: 3075249092726387950
+                                                    GMTOffset: 3483067803620900073
+                                                    Start: 3965694890136508546
+                                                    Timezone: Cumque necessitatibus quo reprehenderit.
+                                          Timestamp:
+                                            - 8006728593824042314
+                                            - 6980508706912623555
+                                            - 7626113238915657187
+components:
+    schemas:
+        ChartQueryResponse:
+            type: object
+            properties:
+                Currency:
+                    type: string
+                    example: Laudantium ut odit accusamus alias et odit.
+                CurrentTradingPeriod:
+                    $ref: '#/components/schemas/CurrentTradingPeriod'
+                ExchangeName:
+                    type: string
+                    example: Ipsum sequi fugit officiis.
+                FirstTradeDate:
+                    type: string
+                    example: Sunt ut.
+                    format: date-time
+                GMTOffset:
+                    type: integer
+                    example: 583211771644698486
+                    format: int64
+                InstrumentType:
+                    type: string
+                    example: Earum facilis sit accusamus blanditiis placeat.
+                Quotes:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/Quote'
+                    example:
+                        - Close: 0.3048765893859837
+                          ClosesAt: Sunt ut.
+                          High: 0.15869531786005123
+                          Low: 0.6120039953144031
+                          Open: 0.7563174130102867
+                          OpensAt: Sunt ut.
+                          Period: 1353380490699271118
+                          Volume: 0.4454353063829886
+                        - Close: 0.3048765893859837
+                          ClosesAt: Sunt ut.
+                          High: 0.15869531786005123
+                          Low: 0.6120039953144031
+                          Open: 0.7563174130102867
+                          OpensAt: Sunt ut.
+                          Period: 1353380490699271118
+                          Volume: 0.4454353063829886
+                        - Close: 0.3048765893859837
+                          ClosesAt: Sunt ut.
+                          High: 0.15869531786005123
+                          Low: 0.6120039953144031
+                          Open: 0.7563174130102867
+                          OpensAt: Sunt ut.
+                          Period: 1353380490699271118
+                          Volume: 0.4454353063829886
+                        - Close: 0.3048765893859837
+                          ClosesAt: Sunt ut.
+                          High: 0.15869531786005123
+                          Low: 0.6120039953144031
+                          Open: 0.7563174130102867
+                          OpensAt: Sunt ut.
+                          Period: 1353380490699271118
+                          Volume: 0.4454353063829886
+                Symbol:
+                    type: string
+                    example: Non sed ipsa et sapiente.
+                Timezone:
+                    type: string
+                    example: Velit illo laboriosam ipsam ut odio est.
+                TradingPeriods:
+                    type: array
+                    items:
+                        type: array
+                        items:
+                            $ref: '#/components/schemas/TradingPeriod'
+                        example:
+                            - End: Sunt ut.
+                              GMTOffset: 1643214125505140303
+                              Start: Sunt ut.
+                              Timezone: Quia qui unde nobis error reprehenderit.
+                            - End: Sunt ut.
+                              GMTOffset: 1643214125505140303
+                              Start: Sunt ut.
+                              Timezone: Quia qui unde nobis error reprehenderit.
+                    example:
+                        - - End: Sunt ut.
+                            GMTOffset: 1643214125505140303
+                            Start: Sunt ut.
+                            Timezone: Quia qui unde nobis error reprehenderit.
+                          - End: Sunt ut.
+                            GMTOffset: 1643214125505140303
+                            Start: Sunt ut.
+                            Timezone: Quia qui unde nobis error reprehenderit.
+                          - End: Sunt ut.
+                            GMTOffset: 1643214125505140303
+                            Start: Sunt ut.
+                            Timezone: Quia qui unde nobis error reprehenderit.
+                          - End: Sunt ut.
+                            GMTOffset: 1643214125505140303
+                            Start: Sunt ut.
+                            Timezone: Quia qui unde nobis error reprehenderit.
+                        - - End: Sunt ut.
+                            GMTOffset: 1643214125505140303
+                            Start: Sunt ut.
+                            Timezone: Quia qui unde nobis error reprehenderit.
+                          - End: Sunt ut.
+                            GMTOffset: 1643214125505140303
+                            Start: Sunt ut.
+                            Timezone: Quia qui unde nobis error reprehenderit.
+                          - End: Sunt ut.
+                            GMTOffset: 1643214125505140303
+                            Start: Sunt ut.
+                            Timezone: Quia qui unde nobis error reprehenderit.
+                        - - End: Sunt ut.
+                            GMTOffset: 1643214125505140303
+                            Start: Sunt ut.
+                            Timezone: Quia qui unde nobis error reprehenderit.
+                          - End: Sunt ut.
+                            GMTOffset: 1643214125505140303
+                            Start: Sunt ut.
+                            Timezone: Quia qui unde nobis error reprehenderit.
+                          - End: Sunt ut.
+                            GMTOffset: 1643214125505140303
+                            Start: Sunt ut.
+                            Timezone: Quia qui unde nobis error reprehenderit.
+                          - End: Sunt ut.
+                            GMTOffset: 1643214125505140303
+                            Start: Sunt ut.
+                            Timezone: Quia qui unde nobis error reprehenderit.
+                        - - End: Sunt ut.
+                            GMTOffset: 1643214125505140303
+                            Start: Sunt ut.
+                            Timezone: Quia qui unde nobis error reprehenderit.
+                          - End: Sunt ut.
+                            GMTOffset: 1643214125505140303
+                            Start: Sunt ut.
+                            Timezone: Quia qui unde nobis error reprehenderit.
+            example:
+                Currency: Quasi hic debitis sed esse.
+                CurrentTradingPeriod:
+                    Post:
+                        End: Sunt ut.
+                        GMTOffset: 1643214125505140303
+                        Start: Sunt ut.
+                        Timezone: Quia qui unde nobis error reprehenderit.
+                    Pre:
+                        End: Sunt ut.
+                        GMTOffset: 1643214125505140303
+                        Start: Sunt ut.
+                        Timezone: Quia qui unde nobis error reprehenderit.
+                    Regular:
+                        End: Sunt ut.
+                        GMTOffset: 1643214125505140303
+                        Start: Sunt ut.
+                        Timezone: Quia qui unde nobis error reprehenderit.
+                ExchangeName: Recusandae quisquam sunt est.
+                FirstTradeDate: Sunt ut.
+                GMTOffset: 5677706584129555941
+                InstrumentType: Amet et quas debitis voluptatum quisquam.
+                Quotes:
+                    - Close: 0.3048765893859837
+                      ClosesAt: Sunt ut.
+                      High: 0.15869531786005123
+                      Low: 0.6120039953144031
+                      Open: 0.7563174130102867
+                      OpensAt: Sunt ut.
+                      Period: 1353380490699271118
+                      Volume: 0.4454353063829886
+                    - Close: 0.3048765893859837
+                      ClosesAt: Sunt ut.
+                      High: 0.15869531786005123
+                      Low: 0.6120039953144031
+                      Open: 0.7563174130102867
+                      OpensAt: Sunt ut.
+                      Period: 1353380490699271118
+                      Volume: 0.4454353063829886
+                Symbol: Et accusamus.
+                Timezone: Et suscipit alias voluptas dolorem qui ea.
+                TradingPeriods:
+                    - - End: Sunt ut.
+                        GMTOffset: 1643214125505140303
+                        Start: Sunt ut.
+                        Timezone: Quia qui unde nobis error reprehenderit.
+                      - End: Sunt ut.
+                        GMTOffset: 1643214125505140303
+                        Start: Sunt ut.
+                        Timezone: Quia qui unde nobis error reprehenderit.
+                      - End: Sunt ut.
+                        GMTOffset: 1643214125505140303
+                        Start: Sunt ut.
+                        Timezone: Quia qui unde nobis error reprehenderit.
+                    - - End: Sunt ut.
+                        GMTOffset: 1643214125505140303
+                        Start: Sunt ut.
+                        Timezone: Quia qui unde nobis error reprehenderit.
+                      - End: Sunt ut.
+                        GMTOffset: 1643214125505140303
+                        Start: Sunt ut.
+                        Timezone: Quia qui unde nobis error reprehenderit.
+                      - End: Sunt ut.
+                        GMTOffset: 1643214125505140303
+                        Start: Sunt ut.
+                        Timezone: Quia qui unde nobis error reprehenderit.
+                    - - End: Sunt ut.
+                        GMTOffset: 1643214125505140303
+                        Start: Sunt ut.
+                        Timezone: Quia qui unde nobis error reprehenderit.
+                      - End: Sunt ut.
+                        GMTOffset: 1643214125505140303
+                        Start: Sunt ut.
+                        Timezone: Quia qui unde nobis error reprehenderit.
+                      - End: Sunt ut.
+                        GMTOffset: 1643214125505140303
+                        Start: Sunt ut.
+                        Timezone: Quia qui unde nobis error reprehenderit.
+                    - - End: Sunt ut.
+                        GMTOffset: 1643214125505140303
+                        Start: Sunt ut.
+                        Timezone: Quia qui unde nobis error reprehenderit.
+                      - End: Sunt ut.
+                        GMTOffset: 1643214125505140303
+                        Start: Sunt ut.
+                        Timezone: Quia qui unde nobis error reprehenderit.
+        CurrentTradingPeriod:
+            type: object
+            properties:
+                Post:
+                    $ref: '#/components/schemas/TradingPeriod'
+                Pre:
+                    $ref: '#/components/schemas/TradingPeriod'
+                Regular:
+                    $ref: '#/components/schemas/TradingPeriod'
+            example:
+                Post:
+                    End: Sunt ut.
+                    GMTOffset: 1643214125505140303
+                    Start: Sunt ut.
+                    Timezone: Quia qui unde nobis error reprehenderit.
+                Pre:
+                    End: Sunt ut.
+                    GMTOffset: 1643214125505140303
+                    Start: Sunt ut.
+                    Timezone: Quia qui unde nobis error reprehenderit.
+                Regular:
+                    End: Sunt ut.
+                    GMTOffset: 1643214125505140303
+                    Start: Sunt ut.
+                    Timezone: Quia qui unde nobis error reprehenderit.
+        Quote:
+            type: object
+            properties:
+                Close:
+                    type: number
+                    example: 0.5667007735066549
+                    format: double
+                ClosesAt:
+                    type: string
+                    example: Sunt ut.
+                    format: date-time
+                High:
+                    type: number
+                    example: 0.30768842202274416
+                    format: double
+                Low:
+                    type: number
+                    example: 0.446809825031207
+                    format: double
+                Open:
+                    type: number
+                    example: 0.7811864320544945
+                    format: double
+                OpensAt:
+                    type: string
+                    example: Sunt ut.
+                    format: date-time
+                Period:
+                    type: integer
+                    example: 7337338082424986558
+                    format: int64
+                Volume:
+                    type: number
+                    example: 0.8610365011705331
+                    format: double
+            description: A stock quote object
+            example:
+                Close: 0.5522470393627769
+                ClosesAt: Sunt ut.
+                High: 0.015195360103662922
+                Low: 0.2483133591105353
+                Open: 0.858926181440051
+                OpensAt: Sunt ut.
+                Period: 4196421697993087298
+                Volume: 0.5578172503387544
+        TradingPeriod:
+            type: object
+            properties:
+                End:
+                    type: string
+                    example: Sunt ut.
+                    format: date-time
+                GMTOffset:
+                    type: integer
+                    example: 7016319120495074594
+                    format: int64
+                Start:
+                    type: string
+                    example: Sunt ut.
+                    format: date-time
+                Timezone:
+                    type: string
+                    example: Id aut earum quas.
+            example:
+                End: Sunt ut.
+                GMTOffset: 2033940050021555502
+                Start: Sunt ut.
+                Timezone: Expedita corrupti labore harum.
+        YahooFinanceChart:
+            type: object
+            properties:
+                Error:
+                    type: string
+                    example: Corrupti consequatur qui et qui ad aspernatur.
+                Result:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/YahooFinanceResult'
+                    example:
+                        - Indicators:
+                            Quote:
+                                - Close:
+                                    - 0.9103553170969846
+                                    - 0.6858491934940434
+                                    - 0.1404822453430044
+                                  High:
+                                    - 0.019396517526854368
+                                    - 0.7642605028744267
+                                  Low:
+                                    - 0.7535329387429268
+                                    - 0.9721579676776365
+                                  Open:
+                                    - 0.5493685193890716
+                                    - 0.8610287430410524
+                                  Volume:
+                                    - 0.9716216308045711
+                                    - 0.4390000863424034
+                                - Close:
+                                    - 0.9103553170969846
+                                    - 0.6858491934940434
+                                    - 0.1404822453430044
+                                  High:
+                                    - 0.019396517526854368
+                                    - 0.7642605028744267
+                                  Low:
+                                    - 0.7535329387429268
+                                    - 0.9721579676776365
+                                  Open:
+                                    - 0.5493685193890716
+                                    - 0.8610287430410524
+                                  Volume:
+                                    - 0.9716216308045711
+                                    - 0.4390000863424034
+                          Meta:
+                            Currency: Dolorem dolor facere.
+                            CurrentTradingPeriod:
+                                Post:
+                                    End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                Pre:
+                                    End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                Regular:
+                                    End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                            ExchangeName: Delectus non.
+                            FirstTradeDate: 5284320928536589798
+                            GMTOffset: 3926491490007617809
+                            InstrumentType: Non nulla.
+                            Symbol: Animi laudantium unde nam sunt.
+                            Timezone: Voluptas optio enim.
+                            TradingPeriods:
+                                - - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                  - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                  - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                - - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                  - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                          Timestamp:
+                            - 8136368797763491847
+                            - 7682478955009354761
+                        - Indicators:
+                            Quote:
+                                - Close:
+                                    - 0.9103553170969846
+                                    - 0.6858491934940434
+                                    - 0.1404822453430044
+                                  High:
+                                    - 0.019396517526854368
+                                    - 0.7642605028744267
+                                  Low:
+                                    - 0.7535329387429268
+                                    - 0.9721579676776365
+                                  Open:
+                                    - 0.5493685193890716
+                                    - 0.8610287430410524
+                                  Volume:
+                                    - 0.9716216308045711
+                                    - 0.4390000863424034
+                                - Close:
+                                    - 0.9103553170969846
+                                    - 0.6858491934940434
+                                    - 0.1404822453430044
+                                  High:
+                                    - 0.019396517526854368
+                                    - 0.7642605028744267
+                                  Low:
+                                    - 0.7535329387429268
+                                    - 0.9721579676776365
+                                  Open:
+                                    - 0.5493685193890716
+                                    - 0.8610287430410524
+                                  Volume:
+                                    - 0.9716216308045711
+                                    - 0.4390000863424034
+                          Meta:
+                            Currency: Dolorem dolor facere.
+                            CurrentTradingPeriod:
+                                Post:
+                                    End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                Pre:
+                                    End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                Regular:
+                                    End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                            ExchangeName: Delectus non.
+                            FirstTradeDate: 5284320928536589798
+                            GMTOffset: 3926491490007617809
+                            InstrumentType: Non nulla.
+                            Symbol: Animi laudantium unde nam sunt.
+                            Timezone: Voluptas optio enim.
+                            TradingPeriods:
+                                - - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                  - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                  - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                - - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                  - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                          Timestamp:
+                            - 8136368797763491847
+                            - 7682478955009354761
+            description: A really cool description
+            example:
+                Error: Enim laudantium voluptatibus.
+                Result:
+                    - Indicators:
+                        Quote:
+                            - Close:
+                                - 0.9103553170969846
+                                - 0.6858491934940434
+                                - 0.1404822453430044
+                              High:
+                                - 0.019396517526854368
+                                - 0.7642605028744267
+                              Low:
+                                - 0.7535329387429268
+                                - 0.9721579676776365
+                              Open:
+                                - 0.5493685193890716
+                                - 0.8610287430410524
+                              Volume:
+                                - 0.9716216308045711
+                                - 0.4390000863424034
+                            - Close:
+                                - 0.9103553170969846
+                                - 0.6858491934940434
+                                - 0.1404822453430044
+                              High:
+                                - 0.019396517526854368
+                                - 0.7642605028744267
+                              Low:
+                                - 0.7535329387429268
+                                - 0.9721579676776365
+                              Open:
+                                - 0.5493685193890716
+                                - 0.8610287430410524
+                              Volume:
+                                - 0.9716216308045711
+                                - 0.4390000863424034
+                      Meta:
+                        Currency: Dolorem dolor facere.
+                        CurrentTradingPeriod:
+                            Post:
+                                End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                            Pre:
+                                End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                            Regular:
+                                End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                        ExchangeName: Delectus non.
+                        FirstTradeDate: 5284320928536589798
+                        GMTOffset: 3926491490007617809
+                        InstrumentType: Non nulla.
+                        Symbol: Animi laudantium unde nam sunt.
+                        Timezone: Voluptas optio enim.
+                        TradingPeriods:
+                            - - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                              - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                              - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                            - - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                              - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                      Timestamp:
+                        - 8136368797763491847
+                        - 7682478955009354761
+                    - Indicators:
+                        Quote:
+                            - Close:
+                                - 0.9103553170969846
+                                - 0.6858491934940434
+                                - 0.1404822453430044
+                              High:
+                                - 0.019396517526854368
+                                - 0.7642605028744267
+                              Low:
+                                - 0.7535329387429268
+                                - 0.9721579676776365
+                              Open:
+                                - 0.5493685193890716
+                                - 0.8610287430410524
+                              Volume:
+                                - 0.9716216308045711
+                                - 0.4390000863424034
+                            - Close:
+                                - 0.9103553170969846
+                                - 0.6858491934940434
+                                - 0.1404822453430044
+                              High:
+                                - 0.019396517526854368
+                                - 0.7642605028744267
+                              Low:
+                                - 0.7535329387429268
+                                - 0.9721579676776365
+                              Open:
+                                - 0.5493685193890716
+                                - 0.8610287430410524
+                              Volume:
+                                - 0.9716216308045711
+                                - 0.4390000863424034
+                      Meta:
+                        Currency: Dolorem dolor facere.
+                        CurrentTradingPeriod:
+                            Post:
+                                End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                            Pre:
+                                End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                            Regular:
+                                End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                        ExchangeName: Delectus non.
+                        FirstTradeDate: 5284320928536589798
+                        GMTOffset: 3926491490007617809
+                        InstrumentType: Non nulla.
+                        Symbol: Animi laudantium unde nam sunt.
+                        Timezone: Voluptas optio enim.
+                        TradingPeriods:
+                            - - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                              - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                              - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                            - - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                              - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                      Timestamp:
+                        - 8136368797763491847
+                        - 7682478955009354761
+                    - Indicators:
+                        Quote:
+                            - Close:
+                                - 0.9103553170969846
+                                - 0.6858491934940434
+                                - 0.1404822453430044
+                              High:
+                                - 0.019396517526854368
+                                - 0.7642605028744267
+                              Low:
+                                - 0.7535329387429268
+                                - 0.9721579676776365
+                              Open:
+                                - 0.5493685193890716
+                                - 0.8610287430410524
+                              Volume:
+                                - 0.9716216308045711
+                                - 0.4390000863424034
+                            - Close:
+                                - 0.9103553170969846
+                                - 0.6858491934940434
+                                - 0.1404822453430044
+                              High:
+                                - 0.019396517526854368
+                                - 0.7642605028744267
+                              Low:
+                                - 0.7535329387429268
+                                - 0.9721579676776365
+                              Open:
+                                - 0.5493685193890716
+                                - 0.8610287430410524
+                              Volume:
+                                - 0.9716216308045711
+                                - 0.4390000863424034
+                      Meta:
+                        Currency: Dolorem dolor facere.
+                        CurrentTradingPeriod:
+                            Post:
+                                End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                            Pre:
+                                End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                            Regular:
+                                End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                        ExchangeName: Delectus non.
+                        FirstTradeDate: 5284320928536589798
+                        GMTOffset: 3926491490007617809
+                        InstrumentType: Non nulla.
+                        Symbol: Animi laudantium unde nam sunt.
+                        Timezone: Voluptas optio enim.
+                        TradingPeriods:
+                            - - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                              - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                              - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                            - - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                              - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                      Timestamp:
+                        - 8136368797763491847
+                        - 7682478955009354761
+                    - Indicators:
+                        Quote:
+                            - Close:
+                                - 0.9103553170969846
+                                - 0.6858491934940434
+                                - 0.1404822453430044
+                              High:
+                                - 0.019396517526854368
+                                - 0.7642605028744267
+                              Low:
+                                - 0.7535329387429268
+                                - 0.9721579676776365
+                              Open:
+                                - 0.5493685193890716
+                                - 0.8610287430410524
+                              Volume:
+                                - 0.9716216308045711
+                                - 0.4390000863424034
+                            - Close:
+                                - 0.9103553170969846
+                                - 0.6858491934940434
+                                - 0.1404822453430044
+                              High:
+                                - 0.019396517526854368
+                                - 0.7642605028744267
+                              Low:
+                                - 0.7535329387429268
+                                - 0.9721579676776365
+                              Open:
+                                - 0.5493685193890716
+                                - 0.8610287430410524
+                              Volume:
+                                - 0.9716216308045711
+                                - 0.4390000863424034
+                      Meta:
+                        Currency: Dolorem dolor facere.
+                        CurrentTradingPeriod:
+                            Post:
+                                End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                            Pre:
+                                End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                            Regular:
+                                End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                        ExchangeName: Delectus non.
+                        FirstTradeDate: 5284320928536589798
+                        GMTOffset: 3926491490007617809
+                        InstrumentType: Non nulla.
+                        Symbol: Animi laudantium unde nam sunt.
+                        Timezone: Voluptas optio enim.
+                        TradingPeriods:
+                            - - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                              - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                              - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                            - - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                              - End: 4221979982558300470
+                                GMTOffset: 8308914717533915819
+                                Start: 7150740811311998122
+                                Timezone: Ullam cumque totam et.
+                      Timestamp:
+                        - 8136368797763491847
+                        - 7682478955009354761
+        YahooFinanceCurrentTradingPeriod:
+            type: object
+            properties:
+                Post:
+                    $ref: '#/components/schemas/YahooFinanceTradingPeriod'
+                Pre:
+                    $ref: '#/components/schemas/YahooFinanceTradingPeriod'
+                Regular:
+                    $ref: '#/components/schemas/YahooFinanceTradingPeriod'
+            example:
+                Post:
+                    End: 4221979982558300470
+                    GMTOffset: 8308914717533915819
+                    Start: 7150740811311998122
+                    Timezone: Ullam cumque totam et.
+                Pre:
+                    End: 4221979982558300470
+                    GMTOffset: 8308914717533915819
+                    Start: 7150740811311998122
+                    Timezone: Ullam cumque totam et.
+                Regular:
+                    End: 4221979982558300470
+                    GMTOffset: 8308914717533915819
+                    Start: 7150740811311998122
+                    Timezone: Ullam cumque totam et.
+        YahooFinanceIndicators:
+            type: object
+            properties:
+                Quote:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/YahooFinanceQuote'
+                    example:
+                        - Close:
+                            - 0.9103553170969846
+                            - 0.6858491934940434
+                            - 0.1404822453430044
+                          High:
+                            - 0.019396517526854368
+                            - 0.7642605028744267
+                          Low:
+                            - 0.7535329387429268
+                            - 0.9721579676776365
+                          Open:
+                            - 0.5493685193890716
+                            - 0.8610287430410524
+                          Volume:
+                            - 0.9716216308045711
+                            - 0.4390000863424034
+                        - Close:
+                            - 0.9103553170969846
+                            - 0.6858491934940434
+                            - 0.1404822453430044
+                          High:
+                            - 0.019396517526854368
+                            - 0.7642605028744267
+                          Low:
+                            - 0.7535329387429268
+                            - 0.9721579676776365
+                          Open:
+                            - 0.5493685193890716
+                            - 0.8610287430410524
+                          Volume:
+                            - 0.9716216308045711
+                            - 0.4390000863424034
+                        - Close:
+                            - 0.9103553170969846
+                            - 0.6858491934940434
+                            - 0.1404822453430044
+                          High:
+                            - 0.019396517526854368
+                            - 0.7642605028744267
+                          Low:
+                            - 0.7535329387429268
+                            - 0.9721579676776365
+                          Open:
+                            - 0.5493685193890716
+                            - 0.8610287430410524
+                          Volume:
+                            - 0.9716216308045711
+                            - 0.4390000863424034
+                        - Close:
+                            - 0.9103553170969846
+                            - 0.6858491934940434
+                            - 0.1404822453430044
+                          High:
+                            - 0.019396517526854368
+                            - 0.7642605028744267
+                          Low:
+                            - 0.7535329387429268
+                            - 0.9721579676776365
+                          Open:
+                            - 0.5493685193890716
+                            - 0.8610287430410524
+                          Volume:
+                            - 0.9716216308045711
+                            - 0.4390000863424034
+            example:
+                Quote:
+                    - Close:
+                        - 0.9103553170969846
+                        - 0.6858491934940434
+                        - 0.1404822453430044
+                      High:
+                        - 0.019396517526854368
+                        - 0.7642605028744267
+                      Low:
+                        - 0.7535329387429268
+                        - 0.9721579676776365
+                      Open:
+                        - 0.5493685193890716
+                        - 0.8610287430410524
+                      Volume:
+                        - 0.9716216308045711
+                        - 0.4390000863424034
+                    - Close:
+                        - 0.9103553170969846
+                        - 0.6858491934940434
+                        - 0.1404822453430044
+                      High:
+                        - 0.019396517526854368
+                        - 0.7642605028744267
+                      Low:
+                        - 0.7535329387429268
+                        - 0.9721579676776365
+                      Open:
+                        - 0.5493685193890716
+                        - 0.8610287430410524
+                      Volume:
+                        - 0.9716216308045711
+                        - 0.4390000863424034
+                    - Close:
+                        - 0.9103553170969846
+                        - 0.6858491934940434
+                        - 0.1404822453430044
+                      High:
+                        - 0.019396517526854368
+                        - 0.7642605028744267
+                      Low:
+                        - 0.7535329387429268
+                        - 0.9721579676776365
+                      Open:
+                        - 0.5493685193890716
+                        - 0.8610287430410524
+                      Volume:
+                        - 0.9716216308045711
+                        - 0.4390000863424034
+        YahooFinanceMeta:
+            type: object
+            properties:
+                Currency:
+                    type: string
+                    example: Omnis ea exercitationem.
+                CurrentTradingPeriod:
+                    $ref: '#/components/schemas/YahooFinanceCurrentTradingPeriod'
+                ExchangeName:
+                    type: string
+                    example: Quia quo perferendis amet.
+                FirstTradeDate:
+                    type: integer
+                    example: 2001736686175458073
+                    format: int64
+                GMTOffset:
+                    type: integer
+                    example: 1551068760833946819
+                    format: int64
+                InstrumentType:
+                    type: string
+                    example: Excepturi molestias fugiat natus est porro suscipit.
+                Symbol:
+                    type: string
+                    example: Est at consequatur laboriosam.
+                Timezone:
+                    type: string
+                    example: Ratione aliquid dolor voluptas tenetur nihil.
+                TradingPeriods:
+                    type: array
+                    items:
+                        type: array
+                        items:
+                            $ref: '#/components/schemas/YahooFinanceTradingPeriod'
+                        example:
+                            - End: 4221979982558300470
+                              GMTOffset: 8308914717533915819
+                              Start: 7150740811311998122
+                              Timezone: Ullam cumque totam et.
+                            - End: 4221979982558300470
+                              GMTOffset: 8308914717533915819
+                              Start: 7150740811311998122
+                              Timezone: Ullam cumque totam et.
+                            - End: 4221979982558300470
+                              GMTOffset: 8308914717533915819
+                              Start: 7150740811311998122
+                              Timezone: Ullam cumque totam et.
+                    example:
+                        - - End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                          - End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                          - End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                          - End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                        - - End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                          - End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                          - End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                          - End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                        - - End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                          - End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                          - End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                          - End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+            example:
+                Currency: Cum unde consequatur labore non.
+                CurrentTradingPeriod:
+                    Post:
+                        End: 4221979982558300470
+                        GMTOffset: 8308914717533915819
+                        Start: 7150740811311998122
+                        Timezone: Ullam cumque totam et.
+                    Pre:
+                        End: 4221979982558300470
+                        GMTOffset: 8308914717533915819
+                        Start: 7150740811311998122
+                        Timezone: Ullam cumque totam et.
+                    Regular:
+                        End: 4221979982558300470
+                        GMTOffset: 8308914717533915819
+                        Start: 7150740811311998122
+                        Timezone: Ullam cumque totam et.
+                ExchangeName: Ducimus deserunt quisquam.
+                FirstTradeDate: 5231227720061008727
+                GMTOffset: 838835205999351244
+                InstrumentType: Praesentium esse neque et placeat saepe quaerat.
+                Symbol: Magni ut eveniet sapiente harum assumenda molestias.
+                Timezone: Non beatae rerum.
+                TradingPeriods:
+                    - - End: 4221979982558300470
+                        GMTOffset: 8308914717533915819
+                        Start: 7150740811311998122
+                        Timezone: Ullam cumque totam et.
+                      - End: 4221979982558300470
+                        GMTOffset: 8308914717533915819
+                        Start: 7150740811311998122
+                        Timezone: Ullam cumque totam et.
+                      - End: 4221979982558300470
+                        GMTOffset: 8308914717533915819
+                        Start: 7150740811311998122
+                        Timezone: Ullam cumque totam et.
+                      - End: 4221979982558300470
+                        GMTOffset: 8308914717533915819
+                        Start: 7150740811311998122
+                        Timezone: Ullam cumque totam et.
+                    - - End: 4221979982558300470
+                        GMTOffset: 8308914717533915819
+                        Start: 7150740811311998122
+                        Timezone: Ullam cumque totam et.
+                      - End: 4221979982558300470
+                        GMTOffset: 8308914717533915819
+                        Start: 7150740811311998122
+                        Timezone: Ullam cumque totam et.
+                      - End: 4221979982558300470
+                        GMTOffset: 8308914717533915819
+                        Start: 7150740811311998122
+                        Timezone: Ullam cumque totam et.
+                      - End: 4221979982558300470
+                        GMTOffset: 8308914717533915819
+                        Start: 7150740811311998122
+                        Timezone: Ullam cumque totam et.
+                    - - End: 4221979982558300470
+                        GMTOffset: 8308914717533915819
+                        Start: 7150740811311998122
+                        Timezone: Ullam cumque totam et.
+                      - End: 4221979982558300470
+                        GMTOffset: 8308914717533915819
+                        Start: 7150740811311998122
+                        Timezone: Ullam cumque totam et.
+                    - - End: 4221979982558300470
+                        GMTOffset: 8308914717533915819
+                        Start: 7150740811311998122
+                        Timezone: Ullam cumque totam et.
+                      - End: 4221979982558300470
+                        GMTOffset: 8308914717533915819
+                        Start: 7150740811311998122
+                        Timezone: Ullam cumque totam et.
+                      - End: 4221979982558300470
+                        GMTOffset: 8308914717533915819
+                        Start: 7150740811311998122
+                        Timezone: Ullam cumque totam et.
+                      - End: 4221979982558300470
+                        GMTOffset: 8308914717533915819
+                        Start: 7150740811311998122
+                        Timezone: Ullam cumque totam et.
+        YahooFinanceQuote:
+            type: object
+            properties:
+                Close:
+                    type: array
+                    items:
+                        type: number
+                        example: 0.5350422801423665
+                        format: double
+                    example:
+                        - 0.8871906937860896
+                        - 0.4327840304090035
+                        - 0.3890497545837213
+                        - 0.9552787924643966
+                High:
+                    type: array
+                    items:
+                        type: number
+                        example: 0.4431676676597474
+                        format: double
+                    example:
+                        - 0.2633766897921456
+                        - 0.6503246916781124
+                Low:
+                    type: array
+                    items:
+                        type: number
+                        example: 0.2651194828552558
+                        format: double
+                    example:
+                        - 0.735418279275318
+                        - 0.980220689156398
+                Open:
+                    type: array
+                    items:
+                        type: number
+                        example: 0.8724875035334401
+                        format: double
+                    example:
+                        - 0.5814336736104119
+                        - 0.769021166753839
+                        - 0.5045884227821198
+                        - 0.9714542110210544
+                Volume:
+                    type: array
+                    items:
+                        type: number
+                        example: 0.36308935354370525
+                        format: double
+                    example:
+                        - 0.6053056507423069
+                        - 0.6631178032973348
+                        - 0.23559507672753421
+                        - 0.3854605426041657
+            example:
+                Close:
+                    - 0.6180126941803153
+                    - 0.34377903132508464
+                High:
+                    - 0.3729530121987051
+                    - 0.7672991811215316
+                    - 0.7477027223306126
+                    - 0.8855816052316573
+                Low:
+                    - 0.06728103098831288
+                    - 0.7510446139667817
+                Open:
+                    - 0.07676027617406507
+                    - 0.8040407017615822
+                    - 0.5727564465142249
+                    - 0.7888026705818916
+                Volume:
+                    - 0.32498486151343914
+                    - 0.09542455187601202
+        YahooFinanceResponse:
+            type: object
+            properties:
+                Chart:
+                    $ref: '#/components/schemas/YahooFinanceChart'
+            example:
+                Chart:
+                    Error: Animi est dolorum.
+                    Result:
+                        - Indicators:
+                            Quote:
+                                - Close:
+                                    - 0.9103553170969846
+                                    - 0.6858491934940434
+                                    - 0.1404822453430044
+                                  High:
+                                    - 0.019396517526854368
+                                    - 0.7642605028744267
+                                  Low:
+                                    - 0.7535329387429268
+                                    - 0.9721579676776365
+                                  Open:
+                                    - 0.5493685193890716
+                                    - 0.8610287430410524
+                                  Volume:
+                                    - 0.9716216308045711
+                                    - 0.4390000863424034
+                                - Close:
+                                    - 0.9103553170969846
+                                    - 0.6858491934940434
+                                    - 0.1404822453430044
+                                  High:
+                                    - 0.019396517526854368
+                                    - 0.7642605028744267
+                                  Low:
+                                    - 0.7535329387429268
+                                    - 0.9721579676776365
+                                  Open:
+                                    - 0.5493685193890716
+                                    - 0.8610287430410524
+                                  Volume:
+                                    - 0.9716216308045711
+                                    - 0.4390000863424034
+                          Meta:
+                            Currency: Dolorem dolor facere.
+                            CurrentTradingPeriod:
+                                Post:
+                                    End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                Pre:
+                                    End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                Regular:
+                                    End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                            ExchangeName: Delectus non.
+                            FirstTradeDate: 5284320928536589798
+                            GMTOffset: 3926491490007617809
+                            InstrumentType: Non nulla.
+                            Symbol: Animi laudantium unde nam sunt.
+                            Timezone: Voluptas optio enim.
+                            TradingPeriods:
+                                - - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                  - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                  - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                - - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                  - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                          Timestamp:
+                            - 8136368797763491847
+                            - 7682478955009354761
+                        - Indicators:
+                            Quote:
+                                - Close:
+                                    - 0.9103553170969846
+                                    - 0.6858491934940434
+                                    - 0.1404822453430044
+                                  High:
+                                    - 0.019396517526854368
+                                    - 0.7642605028744267
+                                  Low:
+                                    - 0.7535329387429268
+                                    - 0.9721579676776365
+                                  Open:
+                                    - 0.5493685193890716
+                                    - 0.8610287430410524
+                                  Volume:
+                                    - 0.9716216308045711
+                                    - 0.4390000863424034
+                                - Close:
+                                    - 0.9103553170969846
+                                    - 0.6858491934940434
+                                    - 0.1404822453430044
+                                  High:
+                                    - 0.019396517526854368
+                                    - 0.7642605028744267
+                                  Low:
+                                    - 0.7535329387429268
+                                    - 0.9721579676776365
+                                  Open:
+                                    - 0.5493685193890716
+                                    - 0.8610287430410524
+                                  Volume:
+                                    - 0.9716216308045711
+                                    - 0.4390000863424034
+                          Meta:
+                            Currency: Dolorem dolor facere.
+                            CurrentTradingPeriod:
+                                Post:
+                                    End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                Pre:
+                                    End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                Regular:
+                                    End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                            ExchangeName: Delectus non.
+                            FirstTradeDate: 5284320928536589798
+                            GMTOffset: 3926491490007617809
+                            InstrumentType: Non nulla.
+                            Symbol: Animi laudantium unde nam sunt.
+                            Timezone: Voluptas optio enim.
+                            TradingPeriods:
+                                - - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                  - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                  - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                - - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                                  - End: 4221979982558300470
+                                    GMTOffset: 8308914717533915819
+                                    Start: 7150740811311998122
+                                    Timezone: Ullam cumque totam et.
+                          Timestamp:
+                            - 8136368797763491847
+                            - 7682478955009354761
+        YahooFinanceResult:
+            type: object
+            properties:
+                Indicators:
+                    $ref: '#/components/schemas/YahooFinanceIndicators'
+                Meta:
+                    $ref: '#/components/schemas/YahooFinanceMeta'
+                Timestamp:
+                    type: array
+                    items:
+                        type: integer
+                        example: 2052152101481202392
+                        format: int64
+                    example:
+                        - 4192596390736298000
+                        - 481801382228818793
+                        - 5151478308619162542
+                        - 5557065144853230448
+            example:
+                Indicators:
+                    Quote:
+                        - Close:
+                            - 0.9103553170969846
+                            - 0.6858491934940434
+                            - 0.1404822453430044
+                          High:
+                            - 0.019396517526854368
+                            - 0.7642605028744267
+                          Low:
+                            - 0.7535329387429268
+                            - 0.9721579676776365
+                          Open:
+                            - 0.5493685193890716
+                            - 0.8610287430410524
+                          Volume:
+                            - 0.9716216308045711
+                            - 0.4390000863424034
+                        - Close:
+                            - 0.9103553170969846
+                            - 0.6858491934940434
+                            - 0.1404822453430044
+                          High:
+                            - 0.019396517526854368
+                            - 0.7642605028744267
+                          Low:
+                            - 0.7535329387429268
+                            - 0.9721579676776365
+                          Open:
+                            - 0.5493685193890716
+                            - 0.8610287430410524
+                          Volume:
+                            - 0.9716216308045711
+                            - 0.4390000863424034
+                Meta:
+                    Currency: Dolorem dolor facere.
+                    CurrentTradingPeriod:
+                        Post:
+                            End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                        Pre:
+                            End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                        Regular:
+                            End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                    ExchangeName: Delectus non.
+                    FirstTradeDate: 5284320928536589798
+                    GMTOffset: 3926491490007617809
+                    InstrumentType: Non nulla.
+                    Symbol: Animi laudantium unde nam sunt.
+                    Timezone: Voluptas optio enim.
+                    TradingPeriods:
+                        - - End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                          - End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                          - End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                        - - End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                          - End: 4221979982558300470
+                            GMTOffset: 8308914717533915819
+                            Start: 7150740811311998122
+                            Timezone: Ullam cumque totam et.
+                Timestamp:
+                    - 4534032707798990938
+                    - 8436230616017105248
+                    - 8818302471966060623
+                    - 2893682534894543402
+        YahooFinanceTradingPeriod:
+            type: object
+            properties:
+                End:
+                    type: integer
+                    example: 2863243398991317875
+                    format: int64
+                GMTOffset:
+                    type: integer
+                    example: 808592871491805172
+                    format: int64
+                Start:
+                    type: integer
+                    example: 4218300236135616020
+                    format: int64
+                Timezone:
+                    type: string
+                    example: Odio cum aperiam quibusdam ullam quia eos.
+            example:
+                End: 8082893381606444429
+                GMTOffset: 1479986146352269238
+                Start: 6613515725810466683
+                Timezone: Itaque eius sunt.
 tags:
     - name: sop
       description: The sop service provides advisors with a comprehensive view of a particular stock schedule.

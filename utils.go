@@ -1,4 +1,4 @@
-package sopapi
+package stocktrader
 
 import (
 	"encoding/json"

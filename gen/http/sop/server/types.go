@@ -11,6 +11,83 @@ import (
 	sop "stocktrader/gen/sop"
 )
 
+// PlanResponseBody is the type of the "sop" service "plan" endpoint HTTP
+// response body.
+type PlanResponseBody struct {
+	Chart *YahooFinanceChartResponseBody `form:"Chart,omitempty" json:"Chart,omitempty" xml:"Chart,omitempty"`
+}
+
+// YahooFinanceChartResponseBody is used to define fields on response body
+// types.
+type YahooFinanceChartResponseBody struct {
+	Result []*YahooFinanceResultResponseBody `form:"Result,omitempty" json:"Result,omitempty" xml:"Result,omitempty"`
+	Error  *string                           `form:"Error,omitempty" json:"Error,omitempty" xml:"Error,omitempty"`
+}
+
+// YahooFinanceResultResponseBody is used to define fields on response body
+// types.
+type YahooFinanceResultResponseBody struct {
+	Meta       *YahooFinanceMetaResponseBody       `form:"Meta,omitempty" json:"Meta,omitempty" xml:"Meta,omitempty"`
+	Timestamp  []int64                             `form:"Timestamp,omitempty" json:"Timestamp,omitempty" xml:"Timestamp,omitempty"`
+	Indicators *YahooFinanceIndicatorsResponseBody `form:"Indicators,omitempty" json:"Indicators,omitempty" xml:"Indicators,omitempty"`
+}
+
+// YahooFinanceMetaResponseBody is used to define fields on response body types.
+type YahooFinanceMetaResponseBody struct {
+	Currency             *string                                       `form:"Currency,omitempty" json:"Currency,omitempty" xml:"Currency,omitempty"`
+	Symbol               *string                                       `form:"Symbol,omitempty" json:"Symbol,omitempty" xml:"Symbol,omitempty"`
+	InstrumentType       *string                                       `form:"InstrumentType,omitempty" json:"InstrumentType,omitempty" xml:"InstrumentType,omitempty"`
+	ExchangeName         *string                                       `form:"ExchangeName,omitempty" json:"ExchangeName,omitempty" xml:"ExchangeName,omitempty"`
+	FirstTradeDate       *int64                                        `form:"FirstTradeDate,omitempty" json:"FirstTradeDate,omitempty" xml:"FirstTradeDate,omitempty"`
+	GMTOffset            *int64                                        `form:"GMTOffset,omitempty" json:"GMTOffset,omitempty" xml:"GMTOffset,omitempty"`
+	Timezone             *string                                       `form:"Timezone,omitempty" json:"Timezone,omitempty" xml:"Timezone,omitempty"`
+	CurrentTradingPeriod *YahooFinanceCurrentTradingPeriodResponseBody `form:"CurrentTradingPeriod,omitempty" json:"CurrentTradingPeriod,omitempty" xml:"CurrentTradingPeriod,omitempty"`
+	TradingPeriods       [][]*YahooFinanceTradingPeriodResponseBody    `form:"TradingPeriods,omitempty" json:"TradingPeriods,omitempty" xml:"TradingPeriods,omitempty"`
+}
+
+// YahooFinanceCurrentTradingPeriodResponseBody is used to define fields on
+// response body types.
+type YahooFinanceCurrentTradingPeriodResponseBody struct {
+	Pre     *YahooFinanceTradingPeriodResponseBody `form:"Pre,omitempty" json:"Pre,omitempty" xml:"Pre,omitempty"`
+	Regular *YahooFinanceTradingPeriodResponseBody `form:"Regular,omitempty" json:"Regular,omitempty" xml:"Regular,omitempty"`
+	Post    *YahooFinanceTradingPeriodResponseBody `form:"Post,omitempty" json:"Post,omitempty" xml:"Post,omitempty"`
+}
+
+// YahooFinanceTradingPeriodResponseBody is used to define fields on response
+// body types.
+type YahooFinanceTradingPeriodResponseBody struct {
+	Timezone  *string `form:"Timezone,omitempty" json:"Timezone,omitempty" xml:"Timezone,omitempty"`
+	Start     *int64  `form:"Start,omitempty" json:"Start,omitempty" xml:"Start,omitempty"`
+	End       *int64  `form:"End,omitempty" json:"End,omitempty" xml:"End,omitempty"`
+	GMTOffset *int64  `form:"GMTOffset,omitempty" json:"GMTOffset,omitempty" xml:"GMTOffset,omitempty"`
+}
+
+// YahooFinanceIndicatorsResponseBody is used to define fields on response body
+// types.
+type YahooFinanceIndicatorsResponseBody struct {
+	Quote []*YahooFinanceQuoteResponseBody `form:"Quote,omitempty" json:"Quote,omitempty" xml:"Quote,omitempty"`
+}
+
+// YahooFinanceQuoteResponseBody is used to define fields on response body
+// types.
+type YahooFinanceQuoteResponseBody struct {
+	High   []float64 `form:"High,omitempty" json:"High,omitempty" xml:"High,omitempty"`
+	Open   []float64 `form:"Open,omitempty" json:"Open,omitempty" xml:"Open,omitempty"`
+	Low    []float64 `form:"Low,omitempty" json:"Low,omitempty" xml:"Low,omitempty"`
+	Close  []float64 `form:"Close,omitempty" json:"Close,omitempty" xml:"Close,omitempty"`
+	Volume []float64 `form:"Volume,omitempty" json:"Volume,omitempty" xml:"Volume,omitempty"`
+}
+
+// NewPlanResponseBody builds the HTTP response body from the result of the
+// "plan" endpoint of the "sop" service.
+func NewPlanResponseBody(res *sop.YahooFinanceResponse) *PlanResponseBody {
+	body := &PlanResponseBody{}
+	if res.Chart != nil {
+		body.Chart = marshalSopYahooFinanceChartToYahooFinanceChartResponseBody(res.Chart)
+	}
+	return body
+}
+
 // NewPlanPayload builds a sop service plan endpoint payload.
 func NewPlanPayload(symbol string) *sop.PlanPayload {
 	v := &sop.PlanPayload{}
